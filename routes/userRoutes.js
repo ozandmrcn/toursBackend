@@ -32,10 +32,11 @@ const router = express.Router();
  * ------------------------------------------------------------------
  * 1) AUTHENTICATION & SECURITY ROUTES (PUBLIC)
  * ------------------------------------------------------------------
+ * These routes are accessible without logging in (e.g., for new users or password recovery).
  */
 router.post("/signup", signUp);
 router.post("/login", login);
-router.get("/logout", logout);
+router.get("/logout", logout); // Note: Logout is a GET request for easy browser/cookie clearing
 router.post("/forgot-password", forgotPassword);
 router.patch("/reset-password/:token", resetPassword);
 

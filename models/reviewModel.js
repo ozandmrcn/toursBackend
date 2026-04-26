@@ -51,13 +51,13 @@ reviewSchema.index({ tour: 1, user: 1 }, { unique: true });
  * QUERY MIDDLEWARE (PRE-FIND HOOKS)
  * ------------------------------------------------------------------
  */
-reviewSchema.pre(/^find/, function (next) {
+// NOTE: Modern Mongoose query hooks don't require 'next()' and can cause errors in Express 5 if provided.
+reviewSchema.pre(/^find/, function () {
   // Populate user info (name and photo) for every review query
   this.populate({
     path: "user",
     select: "name photo",
   });
-  next();
 });
 
 /**

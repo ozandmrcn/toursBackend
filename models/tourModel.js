@@ -112,16 +112,31 @@ const tourSchema = new Schema(
 
     // GEOSPATIAL DATA (GEOJSON)
     startLocation: {
-      type: { type: String, default: "Point", enum: ["Point"] },
-      coordinates: [Number], // [longitude, latitude]
+      // GeoJSON
+      type: {
+        type: String,
+        default: "Point",
+        enum: ["Point"],
+      },
+      coordinates: {
+        type: [Number],
+        required: [true, "A tour must have start coordinates (longitude, latitude)"],
+      },
       address: String,
       description: String,
     },
 
     locations: [
       {
-        type: { type: String, default: "Point", enum: ["Point"] },
-        coordinates: [Number],
+        type: {
+          type: String,
+          default: "Point",
+          enum: ["Point"],
+        },
+        coordinates: {
+          type: [Number],
+          required: [true, "Location coordinates are required"],
+        },
         address: String,
         description: String,
         day: Number,
@@ -179,7 +194,8 @@ tourSchema.virtual("reviews", {
  * Runs before .save() and .create()
  * ------------------------------------------------------------------
  */
-tourSchema.pre("save", function (next) {
+// NOTE: In Mongoose 8+, we don't need 'next' for synchronous middleware.
+tourSchema.pre("save", function () {
   // Generate slug from name
   this.slug = this.name.toLowerCase().split(" ").join("-");
 
@@ -187,7 +203,6 @@ tourSchema.pre("save", function (next) {
   if (this.duration) {
     this.hour = this.duration * 24;
   }
-  next();
 });
 
 /**
@@ -196,22 +211,22 @@ tourSchema.pre("save", function (next) {
  * Runs before any 'find' query
  * ------------------------------------------------------------------
  */
-tourSchema.pre(/^find/, function (next) {
+// NOTE: Using 'next' in query middleware can cause "next is not a function" in modern Mongoose/Express 5.
+tourSchema.pre(/^find/, function () {
   // Automatically filter out premium tours from standard queries (unless specified otherwise)
   this.find({ premium: { $ne: true } });
   
   // Measure query execution time
   this.start = Date.now();
-  next();
 });
 
-tourSchema.pre(/^find/, function (next) {
+// NOTE: We omit 'next' for modern Mongoose compatibility.
+tourSchema.pre(/^find/, function () {
   // Automatically populate guide information
   this.populate({
     path: "guides",
     select: "-password -passChangedAt -passwordResetToken -passwordResetExpires -passwordConfirm -__v",
   });
-  next();
 });
 
 /**
@@ -219,13 +234,13 @@ tourSchema.pre(/^find/, function (next) {
  * AGGREGATION MIDDLEWARE (PRE-AGGREGATE HOOKS)
  * ------------------------------------------------------------------
  */
-tourSchema.pre("aggregate", function (next) {
+// NOTE: For aggregation middleware, omitting 'next' prevents "next is not a function" errors in Express 5.
+tourSchema.pre("aggregate", function () {
   // Exclude premium tours from aggregation results (unless using $geoNear which must be first)
   const pipeline = this.pipeline();
   if (!(pipeline.length > 0 && pipeline[0].$geoNear)) {
     pipeline.unshift({ $match: { premium: { $ne: true } } });
   }
-  next();
 });
 
 const Tour = model("Tour", tourSchema);

@@ -99,7 +99,7 @@
             "header": [],
             "body": {
               "mode": "raw",
-              "raw": "{\r\n    \"name\": \"The See Land\",\r\n    \"duration\": 14,\r\n    \"maxGroupSize\": 24,\r\n    \"difficulty\": \"difficult\",\r\n    \"ratingsAverage\": 4.8,\r\n    \"ratingsQuantity\": 23,\r\n    \"price\": 497,\r\n    \"priceDiscount\": 200,\r\n    \"summary\": \"Exploring the jaw-dropping US east coast by foot and by boat\",\r\n    \"description\": \"Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.\\nIrure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.\",\r\n    \"imageCover\": \"tour-2-cover.jpg\",\r\n    \"images\": [\r\n        \"tour-2-1.jpg\",\r\n        \"tour-2-2.jpg\",\r\n        \"tour-2-3.jpg\"\r\n    ],\r\n    \"startDates\": [\r\n        \"2021-06-19T07:00:00.000Z\",\r\n        \"2021-07-20T07:00:00.000Z\",\r\n        \"2021-08-18T07:00:00.000Z\"\r\n    ],\r\n    \"premium\": false\r\n}",
+              "raw": "{\r\n    \"name\": \"The See Lands\",\r\n    \"duration\": 14,\r\n    \"maxGroupSize\": 24,\r\n    \"difficulty\": \"difficult\",\r\n    \"ratingsAverage\": 4.8,\r\n    \"ratingsQuantity\": 23,\r\n    \"price\": 497,\r\n    \"priceDiscount\": 200,\r\n    \"summary\": \"Exploring the jaw-dropping US east coast by foot and by boat\",\r\n    \"description\": \"Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.\\nIrure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.\",\r\n    \"imageCover\": \"tour-2-cover.jpg\",\r\n    \"images\": [\r\n        \"tour-2-1.jpg\",\r\n        \"tour-2-2.jpg\",\r\n        \"tour-2-3.jpg\"\r\n    ],\r\n    \"startDates\": [\r\n        \"2021-06-19T07:00:00.000Z\",\r\n        \"2021-07-20T07:00:00.000Z\",\r\n        \"2021-08-18T07:00:00.000Z\"\r\n    ],\r\n    \"premium\": false,\r\n    \"startLocation\": {\r\n        \"coordinates\": [\r\n            25.761681,\r\n            -80.191788\r\n        ],\r\n        \"address\": \"Miami\",\r\n        \"description\": \"The starting point of the tour\"\r\n    }\r\n}",
               "options": {
                 "raw": {
                   "language": "json"
@@ -136,9 +136,8 @@
               ],
               "variable": [
                 {
-                  "id": 0,
                   "key": "id",
-                  "value": "5c88fa8cf4afda39709c295a",
+                  "value": "5c88fa8cf4afda39709c2966",
                   "type": "string"
                 }
               ]
@@ -153,7 +152,7 @@
             "header": [],
             "body": {
               "mode": "raw",
-              "raw": "{\r\n    \"name\": \"The Sports Lover\",\r\n    \"duration\": 14,\r\n    \"maxGroupSize\": 8,\r\n    \"difficulty\": \"difficult\",\r\n    \"ratingsAverage\": 3.9,\r\n    \"ratingsQuantity\": 7,\r\n    \"price\": 2997,\r\n    \"summary\": \"Surfing, skating, parajumping, rock climbing and more, all in one tour\",\r\n    \"description\": \"Nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.\\nVoluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur!\",\r\n    \"imageCover\": \"tour-6-cover.jpg\",\r\n    \"images\": [\r\n        \"tour-6-1.jpg\",\r\n        \"tour-6-2.jpg\",\r\n        \"tour-6-3.jpg\"\r\n    ],\r\n    \"premium\": false,\r\n    \"hour\": 336,\r\n    \"__v\": 0\r\n}",
+              "raw": "{\r\n    \"startLocation\": {\r\n        \"description\": \"Aspen, USA\",\r\n        \"type\": \"Point\",\r\n        \"coordinates\": [\r\n            -106.822318,\r\n            39.190872\r\n        ],\r\n        \"address\": \"419 S Mill St, Aspen, CO 81611, USA\"\r\n    },\r\n    \"name\": \"The Sports Lover\",\r\n    \"duration\": 14,\r\n    \"maxGroupSize\": 8,\r\n    \"difficulty\": \"difficult\",\r\n    \"ratingsAverage\": 3.9,\r\n    \"ratingsQuantity\": 7,\r\n    \"price\": 2997,\r\n    \"summary\": \"Surfing, skating, parajumping, rock climbing and more, all in one tour\",\r\n    \"description\": \"Nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.\\nVoluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur!\",\r\n    \"imageCover\": \"tour-6-cover.jpg\",\r\n    \"images\": [\r\n        \"tour-6-1.jpg\",\r\n        \"tour-6-2.jpg\",\r\n        \"tour-6-3.jpg\"\r\n    ],\r\n    \"premium\": false,\r\n    \"hour\": 336,\r\n    \"__v\": 0\r\n}",
               "options": {
                 "raw": {
                   "language": "json"
@@ -172,7 +171,6 @@
               ],
               "variable": [
                 {
-                  "id": 0,
                   "key": "id",
                   "value": "5c88fa8cf4afda39709c2966",
                   "type": "string"
@@ -476,7 +474,7 @@
             "header": [],
             "body": {
               "mode": "raw",
-              "raw": "{\r\n    \"name\": \"Deneme\",\r\n    \"email\": \"admin123@natours.io\",\r\n    \"role\": \"admin\",\r\n    \"active\": true,\r\n    \"photo\": \"user-1.jpg\",\r\n    \"password\": \"Deneme123.\"\r\n}",
+              "raw": "{\r\n    \"name\": \"Deneme\",\r\n    \"email\": \"admin123@natours.io\",\r\n    \"role\": \"admin\",\r\n    \"active\": true,\r\n    \"photo\": \"user-1.jpg\",\r\n    \"password\": \"Deneme123.\",\r\n    \"passwordConfirm\": \"Deneme123.\"\r\n}",
               "options": {
                 "raw": {
                   "language": "json"
@@ -526,7 +524,7 @@
         {
           "name": "Update User",
           "request": {
-            "method": "PUT",
+            "method": "PATCH",
             "header": [],
             "body": {
               "mode": "raw",
@@ -549,9 +547,8 @@
               ],
               "variable": [
                 {
-                  "id": 0,
                   "key": "id",
-                  "value": "69d81f51c27c52ea328e0515",
+                  "value": "69ee97b64eca886c7c5222dd",
                   "type": "string"
                 }
               ]
@@ -634,11 +631,8 @@
                 {
                   "key": "avatar",
                   "type": "file",
-                  "id": 0,
-                  "fileUploadError": "",
-                  "src": [
-                    "c:\\Users\\Ozan\\Desktop\\6_sezon_backend\\6_mongo_tours_backend\\public\\img\\users\\680e013d503fbfd21d910f59-1745748694423.webp"
-                  ]
+                  "uuid": "13734610-d076-489a-9396-c388ca59e40a",
+                  "src": "/C:/Users/Ozan/Desktop/user-69ee6b2b762a722582c355b4-1777244418190.webp"
                 }
               ]
             },
@@ -720,7 +714,7 @@
         {
           "name": "Logout",
           "request": {
-            "method": "POST",
+            "method": "GET",
             "header": [],
             "url": {
               "raw": "{{BASE_URL}}/api/users/logout",
@@ -779,7 +773,7 @@
               }
             },
             "url": {
-              "raw": "http://localhost:4000/api/users/reset-password/50418a30d2f4c15c4f0fbd66b77fc57b7d6ff99ec7eb0fb8bbfd0ad0c0f3e879",
+              "raw": "http://localhost:4000/api/users/reset-password/a2b2b8bfb794e3a1553aac032da4ca99a3d09c458e5210317fc6ff518dd1dce7",
               "protocol": "http",
               "host": [
                 "localhost"
@@ -789,7 +783,7 @@
                 "api",
                 "users",
                 "reset-password",
-                "50418a30d2f4c15c4f0fbd66b77fc57b7d6ff99ec7eb0fb8bbfd0ad0c0f3e879"
+                "a2b2b8bfb794e3a1553aac032da4ca99a3d09c458e5210317fc6ff518dd1dce7"
               ]
             }
           },
