@@ -34,14 +34,6 @@ toursBackend enables developers and administrators to:
 - **Nodemailer** (Email Service)
 - **Validator.js** (Data Validation)
 
-## <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Desktop%20Computer.png" alt="Desktop Computer" width="25" height="25" /> Demo
-
-*Coming Soon...*
-
-## Preview
-
-*Screenshots and API documentation previews will be added here.*
-
 ## <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Desktop%20Computer.png" alt="Desktop Computer" width="25" height="25" /> Setup & Installation
 
 To run the project locally, follow these steps:
